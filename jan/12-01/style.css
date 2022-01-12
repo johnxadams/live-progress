@@ -1,0 +1,11 @@
+nav {
+  background-color: rgb(99, 133, 133);
+}
+nav ul li {
+  display: inline;
+  margin-right: 3rem;
+}
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+}
