@@ -1,6 +1,20 @@
+li {
+  background-color: blue;
+}
+
+div p {
+  background-color: red;
+}
+ul li {
+  background-color: yellow;
+}
+/* Menu */
+nav ul li {
+  background-color: gray;
+}
 .dark {
-  background-color: green;
+  background-color: black;
 }
 .light {
-  color: pink;
+  color: orange;
 }
