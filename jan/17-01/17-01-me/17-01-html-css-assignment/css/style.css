@@ -1,0 +1,33 @@
+
+.shapes div {
+    width: 9rem;
+    height: 9rem;
+    display: inline-block;
+    margin-left: 3rem;
+    border: 2px black solid;
+}
+#rechtangle {
+    background-color: blue;
+    height: 15rem;
+}
+
+#triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 8rem solid transparent;
+    border-left: 12rem solid purple;
+    border-bottom: 0rem solid transparent;   
+}
+#square {
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    background-color: green;
+    border: 2px black solid;
+}
+
+#circle {
+    background-color: yellow;
+    border-radius: 50%;
+}
