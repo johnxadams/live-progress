@@ -4,7 +4,6 @@
     box-sizing: border-box
 }
 body {
-background-color: rgb(100, 100, 100);
 /* background-image: url("../images/blue-sky.jpg"); */
 background-position: center;
 background-repeat: no-repeat;
@@ -47,11 +46,12 @@ main img {
     border-top: 50px black solid;
 }
 .something {
-    width: 10rem;
-    height: 20rem;
-    background-color: lightblue;
+    width: 50rem;
+    height: 50rem;
+    background-image: url("../images/blue-sky.jpg");
+    background-position-x: -10rem;
     margin: 20rem 5rem 5rem 2rem;
-    border:
+  
 }
 h2 {
     color: darkmagenta;
