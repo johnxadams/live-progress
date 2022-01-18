@@ -1,0 +1,10 @@
+table td {
+    width: 5rem;
+    height: 5rem;
+    border: 3px black solid;
+    background-color: purple;
+}
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd){
+    background-color: white;
+}
+

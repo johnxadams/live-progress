@@ -63,3 +63,17 @@ td {
     border-spacing: 30px;
 }
 table {}
+.box {
+    border: 2px black solid;
+    width: 5rem;
+    height: 5rem;
+    background-color: darkred;
+    display: inline-block;
+}
+.one {
+    border: 3px black solid;
+    background-color: gray;
+position: relative;
+top: 100px;
+
+}
