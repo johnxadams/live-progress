@@ -19,6 +19,13 @@
     border-left: 12rem solid purple;
     border-bottom: 0rem solid transparent;   
 }
+.boxangle {
+    background-color: black;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20% 5% 20% 5%;
+
+}
 #square {
     display: inline-block;
     width: 10rem;
