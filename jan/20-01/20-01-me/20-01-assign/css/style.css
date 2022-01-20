@@ -29,7 +29,7 @@ body {
   border: 2px black solid;
   position: absolute;
   top: 7rem;
-  left: 30rem;
+  left: 40rem;
   padding: var(--move2) calc(var(--move2) * 2) var(--move2)
     calc(var(--move2) * 2);
     transition: .3s;
