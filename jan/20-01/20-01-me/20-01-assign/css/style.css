@@ -5,13 +5,13 @@
   font-size: 16px;
 }
 :root {
-  --my-color1: rgb(9, 103, 134);
-  --my-color2: orange;
-  --my-color3: rgb(225, 0, 255);
+  --my-color-first-letter-anchor: rgb(9, 103, 134);
+  --my-color-heading-ahover: orange;
+  --my-color-first-line: rgb(225, 0, 255);
   --my-font-size: 2rem;
   --box-width: 5rem;
   --box-height: 5rem;
-  --font-family: 'Source Serif 4', sans-serif;
+  --font-family: "Source Serif 4", sans-serif;
   --move2: 2rem;
   --move5: 5rem;
 }
@@ -19,7 +19,6 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: var(--font-family);
-
 }
 
 .container {
@@ -32,31 +31,30 @@ body {
   left: 40rem;
   padding: var(--move2) calc(var(--move2) * 2) var(--move2)
     calc(var(--move2) * 2);
-    transition: .3s;
+  transition: 0.3s;
 }
 .container:hover {
-
-    box-shadow: 2px 3px 3px 1px ;
-    transition: .3s;
+  box-shadow: 2px 3px 3px 1px;
+  transition: 0.3s;
 }
 
 h1 {
-  color: var(--my-color2);
+  color: var(--my-color-heading-ahover);
   font-size: calc(var(--my-font-size) * 1.4);
 }
 
 p::first-letter {
-  color: var(--my-color1);
+  color: var(--my-color-first-letter-anchor);
   font-size: var(--my-font-size);
 }
 p::first-line {
-  color: var(--my-color3);
+  color: var(--my-color-first-line);
 }
 a:link,
 a:visited {
   text-decoration: none;
-  color: var(--my-color1);
+  color: var(--my-color-first-letter-anchor);
 }
 a:hover {
-    color: var(--my-color2);
+  color: var(--my-color-heading-ahover);
 }
