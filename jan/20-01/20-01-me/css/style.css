@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* valuable name and values */
+  --my-color: orange;
+  --my-font-size: 3rem;
+  --other-color: blue;
+  --header-font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+  --box-width: 3rem;
+  --img-height: 44rem;
+}
+
+/* pseudo elements and pseudo classes 
+:hover pseudo class
+::after peuso element = specific part of my element
+*/
+h1::after {
+  content: "?_?";
+}
+h1::before {
+  content: "!_!";
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: var(--my-color);
+}
+p::first-letter {
+  color: var(--other-color);
+  font-size: calc(var(--my-font-size) - 1rem);
+}
+.sky {
+  width: 25vw;
+  /* view port width
+    th whole browser 
+    if I use this I have to use it for all other element to, becuase it interacts with them.
+    vw & vh percentage  of the screen*/
+  height: 25vh;
+  filter: grayscale(10);
+  opacity: 0.5;
+}
