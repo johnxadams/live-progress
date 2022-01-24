@@ -35,7 +35,7 @@ fieldset input:focus, select:focus {
     border-bottom: 2px orange solid;
 }
 
-/* fancy checkboy */
+/* fancy checkbox */
 .toggle {
     display: flex;
     align-items: center;
@@ -82,12 +82,13 @@ fieldset input:focus, select:focus {
     border: 1px red solid;
     background-color: white;
 }
-/* plus+ targets the next sibling element */
+/* plus+ targets the next sibling element. And what what does the checked. Erst wenn input :checked ist, heißt wenn es Aktiviert wird, funktioniert der nächste schritt. line 86. */
 input:checked  + .slider{
     background-color: orange
 }
 input:checked + .slider::before {
-    transform: translateX(2.5rem)
+    transform: translateX(2.25rem);
+    transition: .4s;
 }
 
 /* fontawesome */
