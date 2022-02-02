@@ -1,0 +1,63 @@
+.gridContainer {
+    display: inline-grid;
+    /* width: 500px; */
+    background-color: aquamarine;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 100px 100px 100px 100px 100px; 
+    grid-template-areas: 
+    "menu menu menu menu"
+    "main main footer none"
+    "main main footer none"
+    "main main footer side"
+    "header navi navi side"
+    "header middle safe side"
+    "sign vision brain side"
+;
+}
+.gridItem {
+    background-color: bisque;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px black solid;
+}
+
+
+
+
+
+ .grid-a {
+    grid-area: menu;
+}
+.grid-b {
+    grid-area: main;
+}
+.grid-c {
+    grid-area: about;
+}
+.grid-d {
+    grid-area: header;
+} 
+.grid-e {
+    grid-area: side;
+} 
+.grid-f {
+    grid-area: middle;
+} 
+.grid-g {
+    grid-area: safe;
+}  
+.grid-h {
+    grid-area: sign;
+} 
+.grid-i {
+    grid-area: navi;
+} 
+.grid-j {
+    grid-area: vision;
+}  
+.grid-k {
+    grid-area: brain;
+} 
+.grid-l {
+    grid-area: footer;
+} 
