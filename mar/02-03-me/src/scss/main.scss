@@ -1,0 +1,10 @@
+@import "./mixins";
+
+body {
+    background-color: beige;
+}
+
+.box1 {
+@include box-size();
+background-color: grey;
+}

@@ -1,0 +1,32 @@
+// Maps in Sas hold a pairs if keys and values, and make it easy to look up a value by its corresponding key
+
+// in a project we do variables, maps and mixins
+
+$font-sizes: (
+    // key:value
+    xs: 12px,
+    sm: 14px,
+     m: 16px,
+     l: 18px,
+    xl: 20px,
+    xxl: 22px
+);
+
+@mixin font-size($size){
+    @if map-has-key($font-sizes,"sm"){
+    // truthy scope (map-get) to grab the value
+    //  map-has-key is a naming convention.
+    font-size: map-get($font-sizes,"sm");
+    } @else {
+//  falsy scope
+        @error "This is not defined"
+    }
+}
+
+// to check if I have 
+
+$orange-colors: (
+light:rgb(255, 186, 57),
+dark:rgb(206, 137, 9),
+super:rgb(129, 84, 1),
+)

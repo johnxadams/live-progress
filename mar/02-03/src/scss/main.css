@@ -1,0 +1,84 @@
+div {
+  background-color: gray;
+}
+
+.box1 {
+  width: 3rem;
+  height: 3rem;
+}
+
+.box {
+  background-color: purple;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    width: 3rem;
+    height: 3rem;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    width: 3rem;
+    height: 5rem;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    width: 3rem;
+    height: 3rem;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    width: 3rem;
+    height: 5rem;
+  }
+}
+
+.box2 {
+  background-color: pink;
+  width: 51rem;
+  height: 5rem;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.box3 {
+  background-color: black;
+  width: 3rem;
+  height: 2rem;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  height: 5rem;
+}
+
+body {
+  background-color: orange;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,35 @@
+/* menu */
+header nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    border: orange 2px solid
+}
+header ul,
+header form {
+    display: none;
+}
+header nav .menu {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: orange 2px solid
+}
+.hamburger {
+    width: 3rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.hamburger div {
+    width: 2.5rem;
+    border: 2px black solid;
+    background-color: black;
+}
+.menu {
+    grid-area: menu
+}

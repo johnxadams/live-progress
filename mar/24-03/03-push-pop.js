@@ -34,7 +34,7 @@ console.log("the last element in the array was:", lastElement);
 // let's push more elements at once
 letters.push("e", "f", "g", "h", "i");
 
-console.log(letters);
+console.log("more " + letters);
 
 // we can push any data type we want
 

@@ -1,0 +1,9 @@
+# Dependecy dir
+node-modules/
+# General output
+dist/
+# General styles
+src/style/
+# VS code config
+.vscode/
+.DS_Store

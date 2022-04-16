@@ -1,0 +1,74 @@
+//Resting reseting*
+@mixin rest-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+// Center things 
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Size for boxes
+@mixin box-size {
+    width: 3rem;
+    height: 3rem;
+}
+
+// Hide element
+@mixin hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+//Reveal
+@mixin reveal {
+    opacity: 1;
+    visibility: visible;
+}
+
+// cool mixin
+// declaring my mixins
+@mixin box-size-with-random-val ($width, $height) {
+    // scope
+    width: $width;
+    height: $height;
+}
+
+@mixin nice-flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin fade-in($time) {
+    animation-name: fade-in;
+    animation-duration: $time;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+ }
+
+
+
+ // animation with mixins
+ .box {
+     background-color: purple;
+     @include fade-in(3s);
+
+ }
+
+ @keyframes fade-In {
+    0% {
+        @include hide();
+        @include box-size();
+        transform: rotate(0deg);
+    }
+    100% {
+        @include reveal();
+        @include box-size-with-random-val(3rem, 5rem);
+        transform: rotate(90deg);
+    }
+ }
+

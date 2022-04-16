@@ -32,5 +32,3 @@ let cartTotal = 70;
 
 // console.log(amountToPay);
 // console.log(`With a discount of ${discount}€, you have to pay ${amountToPay}€`);
-
-console.log(`With a discount of ${discount}€, you have to pay ${discount > cartTotal ? 0 : cartTotal - discount}€`);

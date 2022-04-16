@@ -1,0 +1,15 @@
+/* logo */
+header .logo {
+    justify-self: flex-start;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px red solid;
+    width: 2rem;
+    height: 1.5rem;
+    color: red;
+    border-radius: 20%;
+    font-weight: 900;
+    margin: 0 0 0 2%;
+}

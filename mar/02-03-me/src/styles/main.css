@@ -1,0 +1,61 @@
+.box {
+  background-color: purple;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fade-In {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    width: 3rem;
+    height: 3rem;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    width: 3rem;
+    height: 5rem;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes fade-In {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    width: 3rem;
+    height: 3rem;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    width: 3rem;
+    height: 5rem;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+body {
+  background-color: beige;
+}
+
+.box1 {
+  width: 3rem;
+  height: 3rem;
+  background-color: grey;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */
