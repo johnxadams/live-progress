@@ -69,3 +69,34 @@ console.log(isFirstLetterUpperCase("Bianca"));
 console.log(isFirstLetterUpperCase("jim"));
 console.log(isFirstLetterUpperCase(""));
 console.log(isFirstLetterUpperCase("A"));
+
+
+function cheaperThan(pricesArr, priceLimit){
+    
+    for (let i = 0; i < pricesArr.length; i++){
+        if (pricesArr[i] < priceLimit){
+            cheaperPrices.push(pricesArr[i])
+        }
+    } 
+    return cheaperPrices;
+  
+}
+let cheaperPrices = [];
+
+// console.log(cheaperThan([19.99, 29.87, 12.99, 5.00, 2.90, 100], 20));
+console.log(cheaperThan([19.99, 29.87, 12.99, 5.00, 2.90, 100], 90));
+console.log(cheaperThan([19.99, 29.87, 12.99, 5.00, 2.90, 100], 0));
+// console.log(cheaperThan([19.99, 29.87, 12.99, 5.00, 2.90, 100], 0));
+
+
+function wordsThatEndWithIng(theWords) {
+    for (let i = 0; i < theWords.length; i++){
+        if (theWords[i].slice(-3) === "ing") {
+            capchaWords.push(theWords[i])
+        }
+    } 
+    return capchaWords;
+}
+let capchaWords = [];
+console.log('Task 6:')
+console.log(wordsThatEndWithIng(["walking", "ing"]));
