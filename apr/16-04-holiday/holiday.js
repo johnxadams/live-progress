@@ -100,3 +100,65 @@ function wordsThatEndWithIng(theWords) {
 let capchaWords = [];
 console.log('Task 6:')
 console.log(wordsThatEndWithIng(["walking", "ing"]));
+
+
+
+
+
+
+
+function numbersDivisibleBy3(dividedNumbers){
+    let dividedNumbersRecall = [];
+    for (let i = 0; i < dividedNumbers.length; i++){
+        if (dividedNumbers[i] % 3 === 0){
+            dividedNumbersRecall.push(dividedNumbers[i])
+            } 
+        }
+        return dividedNumbersRecall;
+    }
+    
+ dividedNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log('Task 7:')
+console.log(numbersDivisibleBy3(dividedNumbers))
+
+
+
+
+function onlyLongWords(theLongWords){
+    let fiveOrMore = [];
+    let splittedString = theLongWords.split(' ');
+    for (let i = 0; i < splittedString.length; i++){
+        if (splittedString[i].length >= 5){
+            fiveOrMore.push(splittedString[i])
+        }
+    }
+    return fiveOrMore;
+}
+
+let theLongWords = "Welcome to Wikipedia the free encyclopedia that anyone can edit";
+console.log('Task 8:')
+console.log(onlyLongWords(theLongWords));
+
+/**
+ * split the words
+ * if string[i].length > 5
+ * push string[i] to fiveOrMore
+ */
+myString = "hello denise"
+console.log(myString[0].toUpperCase())
+
+/**
+ * Map function
+ * The first letter of a string[i].toUpperCase
+ * push the String to new variable
+ */
+function firstLetterUpperCase(inputArray){
+    let outputArray = [];
+    for (let i = 0; i < inputArray.length; i++){
+        outputArray.push(inputArray[i][0].toUpperCase() + inputArray[i].substr(1))
+    }
+return outputArray;
+}
+
+let inputArray = ["table", "chair", "lamp", "pen"];
+console.log(firstLetterUpperCase(inputArray));
