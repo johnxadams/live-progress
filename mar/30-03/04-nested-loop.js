@@ -19,3 +19,5 @@ for (let minute = 0; minute < 60; minute++) {
     );
   }
 }
+
+// minutes goes +1 if second goes through 60x

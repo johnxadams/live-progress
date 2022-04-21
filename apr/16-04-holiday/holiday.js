@@ -20,6 +20,11 @@ function containsVowel(theString){
         return false;
     }
 }
+// let lowerCaseString = string.toLowerrCase()
+// const vowerls = "aeiou"
+// if () vowels.includes(lowerCaseString[i])
+// it looks like we#re checing if 
+
 console.log('Task 2:')
 console.log(containsVowel("table"))
 console.log(containsVowel("bcdfg")); // false
@@ -27,7 +32,7 @@ console.log(containsVowel("a")); // true
 console.log(containsVowel("aeiou")); // true
 console.log(containsVowel("AEIOU")); // true
 console.log(containsVowel("")); // false
-console.log(containsVowel("Abc"));
+console.log(containsVowel("u"));
 
 // if (theString.includes("a","e","i","o","u"))
 
