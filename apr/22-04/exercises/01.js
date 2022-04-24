@@ -47,7 +47,7 @@
  * a) add a given product to the cart
  * b) list the products of the cart for a given user
  * c) list the total items in the cart for a given user
- * d) change the quantity of a given product in that cart
+ * d) change the quantity(number of) of a given product in that cart
  * e) delete a product from the cart
  * f) find the total value of the cart of a given user
  */
