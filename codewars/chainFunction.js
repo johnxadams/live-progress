@@ -45,20 +45,20 @@ chain(2, [add, mult]);
 
 
 
-function chain(input, fs) {
-    // implement the "chain" function
+// function chain(input, fs) {
+//     // implement the "chain" function
     
-    function add(num) {
-        return num + 1;
-      }
+//     function add(num) {
+//         return num + 1;
+//       }
       
-      function mult(num) {
-        return num * 30;
-      }
+//       function mult(num) {
+//         return num * 30;
+//       }
 
-    }
+//     }
 
-    chain(2, [add, mult]);
+//     chain(2, [add, mult]);
 
 
 
@@ -71,3 +71,13 @@ function chain(input, fs) {
     //         return fn(num)
     //     }, num);
     // }
+
+
+
+    // solution
+
+    // function chain(num,arr){
+        // return arr.reduce(function(last,prev){
+        //   return prev(last);
+        // },num);
+        // }

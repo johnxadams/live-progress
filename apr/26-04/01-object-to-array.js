@@ -63,7 +63,7 @@ for (const key of objectKeys) {
 
 
 const bookEntries = Object.entries(book);
-console.log(bookEntries)
+console.log("\n TEEEST \n", bookEntries)
 
 const bookObject = Object.fromEntries(bookEntries);
 console.log(bookObject)
