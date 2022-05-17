@@ -41,7 +41,7 @@ const graduatedAt = people.map((person) => {
   delete personCopy.graduationYear;
   return personCopy;
 });
-
+//the concept of how to use a variable as a property
 console.log("people", people);
 console.log("graduedAt", graduatedAt);
 

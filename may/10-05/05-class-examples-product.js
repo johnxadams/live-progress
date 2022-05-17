@@ -26,11 +26,11 @@ const product1 = new Product("jeans", "clothing", 40, "blue");
 const product2 = new Product("phone", "electronics", 140, "white");
 const product3 = new Product("keyboard", "electronics", 19, "black");
 
-console.log(product1);
-console.log(product2);
-console.log(product3);
+// console.log(product1);
+// console.log(product2);
+// console.log(product3);
 
-console.log(product1.printDescription());
+console.log("product Descprition", product1.printDescription());
 
 for (let key in product1) {
   console.log(key);

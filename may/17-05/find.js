@@ -42,13 +42,13 @@ let products = [
 ];
 
 const product1 = products.find((item) => item.type === "skirt");
-console.log(product1);
+console.log("product1", product1);
 
 const product2 = products.find((item) => item.type === "socks");
-console.log(product2);
+console.log("product2", product2);
 
 const product3 = products.find((item) => item.type === "jacket");
-console.log(product3);
+console.log("product3", product3);
 
 if (product3 === undefined) {
   console.log("the product is not in the array");

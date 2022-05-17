@@ -25,11 +25,11 @@ class Cart {
   }
   list() {
     for (const item of this.items) {
-      console.log(`Type: ${item.type}`);
-      console.log(`Category: ${item.category}`);
-      console.log(`Color: ${item.color}`);
-      console.log(`Price: ${item.price}€`);
-      console.log("--------------");
+      // console.log(`Type: ${item.type}`);
+      // console.log(`Category: ${item.category}`);
+      // console.log(`Color: ${item.color}`);
+      // console.log(`Price: ${item.price}€`);
+      // console.log("--------------");
     }
   }
 }

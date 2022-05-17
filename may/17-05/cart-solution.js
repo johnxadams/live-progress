@@ -23,6 +23,7 @@ class Cart {
      * otherwise, it will be an object containing the actual product that we are trying to add. We can
      * later use this object to change its quantity directly
      */
+    //das erste mal this.items.find() ist (itemInCart.name === productToAdd.name) = false. Darum wird im ifStatements expression nach  "undefined" gefragt. if (productInCart === undefined) is true, create a copyProductToAdd of productToAdd {Object} und füde dazu noch.quantity = 1 hinzu. Erst jetzt wird copyProductToAdd zu this.items hinzugefügt. - Else wenn productToiAdd bereits existiert, muss zwangsläufig auch quantity existiert, daher erhöhrt der elseStatementd den  productInCart, welche im ifStatement(false) verglichen wurde productInCart.quantity++
     const productInCart = this.items.find(
       (itemInCart) => itemInCart.name === productToAdd.name
     );
@@ -41,6 +42,7 @@ class Cart {
     const productInCart = this.items.find(
       (itemInCart) => itemInCart.name === productName
     );
+    //object of jeans already exist = 1
     if (productInCart !== undefined) {
       productInCart.quantity--;
     } else {
@@ -50,7 +52,9 @@ class Cart {
 
     if (productInCart.quantity === 0) {
       this.items = this.items.filter((item) => item.quantity > 0);
-    }
+    } //not remove, but saving the rest
+    // this.item  = every item which quantity is bigger than zero
+    // it printing out each currentItem, whichs quantity is bigger than zero
     return this.items;
   }
   getTotal() {
