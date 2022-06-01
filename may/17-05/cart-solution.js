@@ -54,7 +54,7 @@ class Cart {
       this.items = this.items.filter((item) => item.quantity > 0);
     } //not remove, but saving the rest
     // this.item  = every item which quantity is bigger than zero
-    // it printing out each currentItem, whichs quantity is bigger than zero
+    // it printing out each currentItem, which quantity is bigger than zero
     return this.items;
   }
   getTotal() {
