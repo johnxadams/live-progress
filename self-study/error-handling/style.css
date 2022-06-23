@@ -1,0 +1,8 @@
+.first-div, 
+.second-div, 
+.third-div {
+  width: 10rem;
+  height: 10rem;
+  border: 2px black solid;
+  margin: 2rem;
+}

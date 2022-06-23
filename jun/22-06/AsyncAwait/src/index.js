@@ -15,7 +15,7 @@ const groups = {
   Doe: ["John's group"],
   Sanchez: ["Maria's group"],
 };
-
+//return an object 
 function getUser(id) {
   const user = users.find((us) => us.id === id);
   return Promise.resolve(user);
