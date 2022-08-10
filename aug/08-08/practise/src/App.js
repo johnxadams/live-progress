@@ -5,12 +5,12 @@ import { PostContext } from "./contexts/Posts";
 
 const URL = "https://jsonplaceholder.typicode.com";
 
-const fetchPosts = async () => {
-  const response = await fetch(`${URL}/posts`);
-  const data = await response.json();
+// const fetchPosts = async () => {
+//   const response = await fetch(`${URL}/posts`);
+//   const data = await response.json();
 
-  return data;
-};
+//   return data;
+// };
 
 function App() {
   const [text, setText] = useState("");
@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/posts/${number}`)
       .then((response) => response.json())
-      .then((json) => setPosts([...posts, json]));
+      .then((data) => setPosts([...posts, data]));
   }, [number]);
 
   const handleChange = (event) => {
